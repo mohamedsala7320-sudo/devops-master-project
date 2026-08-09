@@ -55,3 +55,20 @@ It integrates modern DevOps practices including **Infrastructure as Code (IaC)**
    ```bash
    git clone [https://github.com/mohamedsala7320-sudo/devops-master-project.git](https://github.com/mohamedsala7320-sudo/devops-master-project.git)
    cd devops-master-project
+1.Start Docker Desktop & Kubernetes:
+  Ensure Docker Desktop is running with Kubernetes enabled.
+
+2.Deploy to Kubernetes:
+  Bush
+  kubectl apply -f k8s/
+3.Access the application:
+  Open your browser and navigate to http://localhost:5000
+
+
+## 🎯 Learning Goal
+
+To gain hands-on experience in building a production-ready CI/CD pipeline and mastering the integration between Developer workflows and Cloud DevOps infrastructure.
+
+## 🧑‍💻 Author
+
+Mohamed Salah

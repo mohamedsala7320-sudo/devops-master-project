@@ -2,7 +2,8 @@
 
 مشروع DevOps متكامل يعمل على أتمتة بناء وتشغيل تطبيق ويب باستخدام أحدث الأدوات.
 
----
+---<img width="3331" height="3146" alt="architecture-diagram" src="https://github.com/user-attachments/assets/2af1ecd3-f828-4b7f-922f-a58bf11d995d" />
+
 
 ## 🛠️ الأدوات المستخدمة (Tech Stack)
 

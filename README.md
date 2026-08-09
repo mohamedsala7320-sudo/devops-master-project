@@ -35,6 +35,8 @@ It integrates modern DevOps practices including **Infrastructure as Code (IaC)**
 ## 🏗️ Architecture & Workflow
 
 ![DevOps Pipeline Flow Diagram](./architecture-diagram.jpg)
+  <img width="3331" height="3146" alt="architecture-diagram" src="https://github.com/user-attachments/assets/b0d5c74b-1979-4016-bc9b-460ed0386ba8" />
+<img width="3331" height="3146" alt="architecture-diagram" src="https://github.com/user-attachments/assets/76f6b25d-7b6f-4451-ae3b-6391e586c554" />
 
 ---
 
@@ -61,8 +63,6 @@ It integrates modern DevOps practices including **Infrastructure as Code (IaC)**
 2.Deploy to Kubernetes:
   Bush
   kubectl apply -f k8s/
-  <img width="3331" height="3146" alt="architecture-diagram" src="https://github.com/user-attachments/assets/b0d5c74b-1979-4016-bc9b-460ed0386ba8" />
-<img width="3331" height="3146" alt="architecture-diagram" src="https://github.com/user-attachments/assets/76f6b25d-7b6f-4451-ae3b-6391e586c554" />
 
 3.Access the application:
   Open your browser and navigate to http://localhost:5000

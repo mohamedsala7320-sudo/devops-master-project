@@ -9,6 +9,16 @@ pipeline {
             }
         }
 
+        stage('Infrastructure via Terraform') {
+            steps {
+                echo 'Provisioning Infrastructure with Terraform...'
+                dir('terraform') {
+                    bat 'terraform init'
+                    bat 'terraform apply -auto-approve'
+                }
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker Image...'

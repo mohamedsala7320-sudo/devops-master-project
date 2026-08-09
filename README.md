@@ -70,10 +70,13 @@ It integrates modern DevOps practices including **Infrastructure as Code (IaC)**
 
   Open your browser and navigate to http://localhost:5000
 
+---
 
 ## 🎯 Learning Goal
 
 To gain hands-on experience in building a production-ready CI/CD pipeline and mastering the integration between Developer workflows and Cloud DevOps infrastructure.
+
+---
 
 ## 🧑‍💻 Author
 

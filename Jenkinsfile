@@ -42,6 +42,13 @@ pipeline {
             }
         }
 
+        stage('Deploy to Kubernetes') {
+            steps {
+                echo 'Deploying Application to Kubernetes...'
+                bat 'kubectl apply -f k8s/'
+            }
+        }
+
         stage('Test App') {
             steps {
                 echo 'Testing Docker Image...'

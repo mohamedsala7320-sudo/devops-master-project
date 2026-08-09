@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Fetching code from GitHub...'
+                // بياخد أحدث كود من GitHub
+                checkout scm
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                echo 'Building Docker Image...'
+                // بيعمل Build للـ Image
+                sh 'docker build -t my-devops-app:latest .'
+            }
+        }
+
+        stage('Test App') {
+            steps {
+                echo 'Testing Docker Image...'
+                // بيتأكد إن الـ Image اتمسكت بنجاح
+                sh 'docker image ls my-devops-app'
+            }
+        }
+    }
+}

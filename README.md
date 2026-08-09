@@ -1,4 +1,4 @@
-# 🚀 end-to-end-devops-cicd-pipeline
+# 🚀 End-to-End-DevOps-CI/CD-Pipeline
 
 ---
 

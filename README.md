@@ -1,36 +1,57 @@
-# 🚀 End-to-End DevOps CI/CD Pipeline
-
-مشروع DevOps متكامل يعمل على أتمتة بناء وتشغيل تطبيق ويب باستخدام أحدث الأدوات.
-
----<img width="3331" height="3146" alt="architecture-diagram" src="https://github.com/user-attachments/assets/2af1ecd3-f828-4b7f-922f-a58bf11d995d" />
-
-
-## 🛠️ الأدوات المستخدمة (Tech Stack)
-
-* **Git & GitHub:** لإدارة الكود والمصدر.
-* **Jenkins:** لأتمتة مراحل الـ CI/CD.
-* **Terraform:** لإدارة البنية التحتية ككود (IaC).
-* **Docker & Docker Hub:** لبناء الـ Containers ورفع الـ Images.
-* **Kubernetes:** لتشغيل وإدارة الحاويات (Container Orchestration).
-* **Python (Flask):** التطبيق المكتوب.
+# 🚀 end-to-end-devops-cicd-pipeline
 
 ---
 
-## 🚀 مراحل الـ Pipeline
+## 📊 Project Overview
 
-1. **Checkout:** سحب أحدث نسخة من الكود من GitHub.
-2. **Infrastructure via Terraform:** تهيئة البنية التحتية تلقائياً.
-3. **Build Docker Image:** بناء صورة التطبيق (Docker Image).
-4. **Push to Docker Hub:** رفع الصورة لحساب Docker Hub.
-5. **Deploy to Kubernetes:** نشر التطبيق على الكلوستر وتوفيره عبر `LoadBalancer`.
-6. **Test App:** التأكد من نجاح العملية ووجود الصورة.
+This project demonstrates a full end-to-end **DevOps CI/CD Pipeline** designed to automate the building, testing, containerizing, and deploying of a Python Flask web application.
+
+It integrates modern DevOps practices including **Infrastructure as Code (IaC)** with Terraform, **Continuous Integration & Continuous Deployment** via Jenkins, **Containerization** using Docker, and **Container Orchestration** with Kubernetes.
 
 ---
 
-## 🌐 تشغيل التطبيق
+## 🛠️ Tools & Technologies
 
-بعد تشغيل الـ Pipeline بنجاح في Jenkins، يمكنك الوصول للتطبيق عبر المتصفح:
-`http://localhost:5000`
+- **Python (Flask)**
+- **Git & GitHub**
+- **Jenkins CI/CD**
+- **Terraform (IaC)**
+- **Docker & Docker Hub**
+- **Kubernetes (k8s)**
 
 ---
-*Created by **Mohamed Salah***
+
+## 🔍 Pipeline Steps Performed
+
+- **Source Code Management:** Automatic fetch of latest code changes from `GitHub`.
+- **Infrastructure Provisioning:** Managing and initializing infrastructure files using `Terraform`.
+- **Application Containerization:** Building a lightweight `Docker` image for the Flask application.
+- **Artifact Registry Push:** Authenticating and pushing the image to `Docker Hub`.
+- **Kubernetes Deployment:** Applying `Deployment` and `Service` manifests using `kubectl`.
+- **App Exposure & Testing:** Exposing the application via `LoadBalancer` on port `5000`.
+
+---
+
+## 🏗️ Architecture & Workflow
+
+![DevOps Pipeline Flow Diagram](./architecture-diagram.jpg)
+
+---
+
+## 💡 Key DevOps Concepts Practiced
+
+- `CI/CD Automation` with Jenkins Pipelines
+- `Infrastructure as Code (IaC)` principles
+- `Containerization` & Environment Isolation
+- `Kubernetes Cluster Management`
+- `Pod Management` & Scalability
+- `LoadBalancing` & Service Exposing
+
+---
+
+## ▶️ How to Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/mohamedsala7320-sudo/devops-master-project.git](https://github.com/mohamedsala7320-sudo/devops-master-project.git)
+   cd devops-master-project

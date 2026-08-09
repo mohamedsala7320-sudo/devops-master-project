@@ -12,14 +12,14 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker Image...'
-                sh 'docker build -t my-devops-app:latest .'
+                bat 'docker build -t my-devops-app:latest .'
             }
         }
 
         stage('Test App') {
             steps {
                 echo 'Testing Docker Image...'
-                sh 'docker image ls my-devops-app'
+                bat 'docker image ls my-devops-app'
             }
         }
     }

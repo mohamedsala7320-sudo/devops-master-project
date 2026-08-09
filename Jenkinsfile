@@ -13,8 +13,8 @@ pipeline {
             steps {
                 echo 'Provisioning Infrastructure with Terraform...'
                 dir('terraform') {
-                    bat 'terraform init'
-                    bat 'terraform apply -auto-approve'
+                    bat 'C:\\Users\\user\\AppData\\Local\\Microsoft\\WinGet\\Links\\terraform.exe init'
+                    bat 'C:\\Users\\user\\AppData\\Local\\Microsoft\\WinGet\\Links\\terraform.exe apply -auto-approve'
                 }
             }
         }
